@@ -50,7 +50,7 @@ jobs:
 
   deploy:
     needs: buildx
-    runs-on: ip-172-31-45-213
+    runs-on: auto-deploy
     steps:
       - name: Pull image from docker hub
         run: docker pull kanatsumi2003/zoomanagement:latest

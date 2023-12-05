@@ -50,7 +50,7 @@ jobs:
 
   deploy:
     needs: buildx
-    runs-on: auto-deploy
+    runs-on: self-hosted
     steps:
       - name: Pull image from docker hub
         run: docker pull kanatsumi2003/zoomanagement:latest
